@@ -6,7 +6,7 @@ import plotly
 import plotly.plotly as py
 from plotly.graph_objs import *
 plotly.tools.set_credentials_file(username='templarz', api_key='PtKMjV9gAzINZqmQRU4T')
-conn=pymysql.connect(host='127.0.0.1',port=3306,user='root',passwd='900830',db='native1',charset='utf8')
+conn=pymysql.connect(host='127.0.0.1',port=3306,user='root',passwd='900',db='native1',charset='utf8')
 cursor=conn.cursor()
 cursor.execute("select x,y,z from jdb1 group by x,y,z")
 res=cursor.fetchall()
